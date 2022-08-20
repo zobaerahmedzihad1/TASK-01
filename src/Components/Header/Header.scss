@@ -1,12 +1,14 @@
 @import '../../scssStyles/main';
 
 .header__container{
-    padding: 5rem 2rem;
+    padding: 8rem 2rem;
     display: grid;
     grid-gap: 1rem;
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
-    background-color: #EEFBF3;
+    align-items: center;
+    // background-color: #EEFBF3;
+    // height: 85vh;
 
     @media screen and (max-width: 600px) {
         grid-template-columns: 1fr;
@@ -59,6 +61,7 @@
         img{
             width: 100%;
             background-size: cover;
+            cursor: pointer;
         }
     }
 }
