@@ -27,21 +27,7 @@
     }
     span{
         button{
-            padding: 8px 40px;
-            font-size: 20px;
-            font-weight: 600;
-            background-color: $primary;
-            color: #fff;
-            border-radius: 5px;
-            border: 2px solid $primary;
-            cursor: pointer;
-            transition: all ease 0.3s;
-
-            &:hover{
-                background-color: white;
-                color: $primary;
-                border: 2px solid $primary;
-            }
+            @include button__style
         } 
     }
    }
