@@ -1,3 +1,48 @@
-.navbar{
-    text-align: center;
+@import '../../scssStyles/main';
+
+.navbar__container{
+    height: 70px;
+    background-color: #fff;
+    box-shadow: 0 0 1.56rem rgba(0, 0, 0, 0.2);
+
+   .navbar__content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 3rem 0 10rem;
+    
+    img{
+        background-size: cover;
+        height: 70px;
+        padding: 5px 0;
+        cursor: pointer;
+    }
+    h2{
+        font-size: 45px;
+        color: $primary;
+
+        @media screen and (max-width: 600px) {
+            display: none;
+        }
+    }
+    span{
+        button{
+            padding: 8px 40px;
+            font-size: 20px;
+            font-weight: 600;
+            background-color: $primary;
+            color: #fff;
+            border-radius: 5px;
+            border: 2px solid $primary;
+            cursor: pointer;
+            transition: all ease 0.3s;
+
+            &:hover{
+                background-color: white;
+                color: $primary;
+                border: 2px solid $primary;
+            }
+        } 
+    }
+   }
 }
